@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>eteam</groupId>
+  <artifactId>wawo-tool</artifactId>
+  <version>1.3</version>
+  <packaging>jar</packaging>
+    <parent>
+      <groupId>eteam</groupId>
+      <artifactId>eteam-maven-parent</artifactId>
+      <version>1.0</version>
+    </parent>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.5</maven.compiler.source>
+    <maven.compiler.target>1.5</maven.compiler.target>
+  </properties>
+  <dependencies>
+    
+     <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+      <scope>provided</scope>
+    </dependency>
+    
+    <dependency>
+      <groupId>eteam</groupId>
+      <artifactId>wawo</artifactId>
+      <version>1.3</version>
+
+    </dependency>
+    <dependency>
+      <groupId>eteam</groupId>
+      <artifactId>wawo-jtidy</artifactId>
+      <version>938.1</version>
+
+    </dependency>
+   
+    <dependency>
+      <groupId>net.sourceforge.jexcelapi</groupId>
+      <artifactId>jxl</artifactId>
+      <version>2.6.12</version> 
+      <scope>compile</scope>
+    </dependency>
+     <dependency>
+      <groupId>eteam.thirdparty</groupId>
+      <artifactId>yuicompressor</artifactId>
+      <version>2.4.8</version> 
+      <scope>provided</scope>
+    </dependency>
+        
+   
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-core</artifactId>
+      <version>2.4.1</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-annotations</artifactId>
+      <version>2.4.1</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.4.1</version>
+      <scope>provided</scope>
+    </dependency>
+  <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.31</version>
+      <scope>provided</scope>
+    </dependency>
+    
+  </dependencies>
+    <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.9.1</version>  
+         <configuration>
+           <author>false</author>
+          <show>protected</show>             
+        </configuration>      
+      </plugin>
+    </plugins>
+  </build>
+</project>
